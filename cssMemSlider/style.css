@@ -11,16 +11,17 @@ main {
     position: relative;
     top: 20px;
     margin: 0 auto;
-    width: calc((1440/1880) * 100%);
+    width: 42%;
+    overflow: hidden;
 }
 
 .slider {
     position: relative;
     top: 0;
     margin: 0px auto;
-    width: calc((800/1440) * 100%);
+    width: 100%;
     height: auto;
-    overflow: hidden;
+    
 }
 
 .slides {
@@ -51,7 +52,7 @@ img {
 .navigation {
     position: relative;
     top: -40px;
-    margin-left:  calc(77.5% - 180px);
+    margin-left:  calc(100% - 190px);
     width: 190px;
     height: 50px;
     display: flex;
@@ -75,19 +76,11 @@ img {
     border: 3px solid #fff;
 }
 
-/* .bar.a1 {
-    background-color: royalblue;
-    border: 3px solid royalblue;
-}
-
-.bar.a1:hover {
-    background-color: #fff;
-    border: 3px solid #fff;
-}
- */
-
-
 input[name="r"] {
+    display: none;
+}
+
+input[name="rad"] {
     display: none;
 }
 
@@ -113,39 +106,19 @@ input[name="r"] {
 
 @media (max-width: 1023px) {
     main {
-        width: 95%;
-    }
-
-    .slider {
         width: 80%;
-    }
-
-    .navigation {
-        margin-left:  calc(90% - 190px);
     }
 }
 
 @media (max-width: 600px) {
     main {
-        width: 96%;
-    }
-
-    .slider {
-        width: 100%;
-    }
-
-    .navigation {
-        margin-left:  calc(100% - 190px);
+        width: 94%;
     }
 }
 
 @media (max-width: 490px) {
     main {
         width: 96%;
-    }
-
-    .slider {
-        width: 100%;
     }
 
     .navigation {
